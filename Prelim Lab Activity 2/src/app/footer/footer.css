@@ -1,0 +1,37 @@
+/* Technical Skills Section */
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for tech categories */
+  gap: 20px; /* Adjusted gap */
+  margin-top: 15px;
+}
+
+.tech-category {
+  background-color: var(--light-bg); /* Used Very Light Gray */
+  padding: 15px 20px;
+  border-radius: 4px;
+  /* Updated Border: Use a thin, full border with the gold accent color */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 5px solid var(--accent-color); /* Used Dark Goldenrod for left border */
+}
+
+.category-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.tech-items {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Reusing profile-text for the Professional value statement */
+.profile-text {
+  font-size: 1rem;
+  color: #444;
+  text-align: left;
+  line-height: 1.7;
+}
