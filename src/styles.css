@@ -1,0 +1,58 @@
+/* Custom CSS Variables */
+:root {
+  --primary-color: #1a2634;        /* Deep Navy */
+  --accent-color: #b8860b;         /* Dark Goldenrod */
+  --secondary-color: #5b708b;      /* Muted Blue/Gray */
+  --bg-color: #fdfdfd;             /* Off-white background */
+  --light-bg: #f8f8f8;             /* Very light gray for categories */
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- CUSTOMIZATION 1: BOX SHADOW AND FONT FAMILY --- */
+.cv-container {
+  max-width: 900px;
+  margin: 40px auto; /* Increased top/bottom margin */
+  padding: 40px 60px;
+  /* CUSTOM FONT: Modern sans-serif (Inter or similar professional font) */
+  font-family: 'Inter', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  line-height: 1.65;
+
+  /* CUSTOMIZATION 2: Subtle Box Shadow for Elevated Look (Personal Touch) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 6px; /* Slightly rounded corners */
+}
+
+/* General Content Styles */
+.cv-content {
+  margin-top: 30px;
+}
+
+.profile-section,
+.skills-section,
+.technical-skills {
+  margin-bottom: 35px;
+}
+
+/* CUSTOMIZATION 3: Section Title Divider Change */
+.section-title {
+  font-size: 1.6rem; /* Slightly larger title */
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  /* CUSTOM FONT: Using 'Merriweather' for serif contrast in titles */
+  font-family: 'Merriweather', 'Georgia', serif;
+  color: var(--primary-color);
+  margin-bottom: 15px; /* Increased bottom margin */
+  padding-bottom: 5px;
+  /* New Border Style: Subtle, modern double-line look */
+  border-bottom: 2px solid var(--accent-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Added light top border */
+  text-transform: uppercase;
+}
