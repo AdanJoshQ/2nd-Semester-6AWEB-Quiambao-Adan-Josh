@@ -1,0 +1,138 @@
+/* General container style for a clean look */
+:host {
+  display: block;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style for the main 'directives works!' message */
+p:first-child {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  border-bottom: 3px solid #e0e0e0;
+  padding-bottom: 15px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+/* Styling for all example tables */
+table {
+  width: 100%;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+
+/* Styling for the list of cities (@for example) */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f8f9fa;
+  margin-bottom: 5px;
+  padding: 8px 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 4px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #edf2f7;
+}
+
+/* Styling for buttons (event handling examples) */
+button {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Specific styling for the Student List Table */
+table:last-of-type {
+  margin-top: 40px;
+  border: 2px solid #34495e;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+thead {
+  background-color: #34495e;
+  color: white;
+}
+
+th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Status column styling (Active/Inactive using @if) */
+tbody td:last-child p {
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+/* Styles for Active status (Targets the <p> inside the @if block) */
+tbody tr td:last-child p:nth-child(1) {
+  color: #1e8449; /* Darker Green */
+  background-color: #eaf7ee;
+  border: 1px solid #2ecc71;
+}
+
+/* Styles for Inactive status (Targets the <p> inside the @else block) */
+tbody tr td:last-child p:nth-child(2) {
+  color: #c0392b; /* Red */
+  background-color: #fae4e1;
+  border: 1px solid #e74c3c;
+}
